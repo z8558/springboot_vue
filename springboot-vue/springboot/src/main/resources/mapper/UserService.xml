@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://www.mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cn.service.UserService">
+    <select id="selectname" resultType="com.cn.entity.User">
+        select id,name,nick_name,age,sex,address from user where name=#{name}
+    </select>
+</mapper>
+
+    
